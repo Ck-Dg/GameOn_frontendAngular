@@ -1,0 +1,68 @@
+    <!--// Login item\\-->
+      <div class="col-md-6">
+                  <div class="sportsmagazine-login-form sportsmagazine-register-form">
+                          <h4>Se connecter</h4>
+                          <form
+                          *ngIf="!isLoggedIn"
+                          name="form"
+                          (ngSubmit)="f.form.valid && onSubmit()"
+                          #f="ngForm"
+                          novalidate>
+                              <!--// Username \\-->
+                              <ul>
+                                  <li><label class="form-label">Votre nom d'utilisateur</label><input type="text" value="Entrez votre nom utilisateur*" onblur="if(this.value == '') { this.value ='Entrez votre nom utilisateur*'; }" onfocus="if(this.value =='Entrez votre nom utilisateur*') { this.value = ''; }"
+                                    name="username"
+                                    [(ngModel)]="form.username"
+                                    required
+                                    minlength="3"
+                                    maxlength="20"
+                                    #username="ngModel"/>
+                                    <div class="alert-danger" *ngIf="username.errors && f.submitted">
+                                      <div *ngIf="username.errors['required']">Nom d'utilisateur obligatoire</div>
+                                      <div *ngIf="username.errors['minlength']">
+                                        Le nom d'utilisateur doit être au moins 3 caractères
+                                      </div>
+                                      <div *ngIf="username.errors['maxlength']">
+                                        Le nom d'utilisateur ne doit pas dépasser 20 caractères
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <!--// Password \\-->
+                                  <li><label class="form-label">Votre mot de passe</label><input type="text" value="Entrez votre mot de passe" onblur="if(this.value == '') { this.value ='Entrez votre mot de passe'; }" onfocus="if(this.value =='Entrez votre mot de passe') { this.value = ''; }"
+                                    type="password"
+                                    class="form-control"
+                                    name="password"
+                                    [(ngModel)]="form.password"
+                                      required
+                                      minlength="6"
+                                      #password="ngModel"/>
+                                      <div class="alert-danger" *ngIf="password.errors && f.submitted">
+                                        <div *ngIf="password.errors['required']">Mot de passe obligatoire</div>
+                                        <div *ngIf="password.errors['minlength']">
+                                          Mot de passe doit être composé d'au moins 6 caractères
+                                        </div>
+                                        </div>
+                                    <a href="#">Mot de passe oublié ?</a>
+                                    </li>
+                                      <li>
+                                      <label class="submit-border"><input type="submit" value="GAME ON !"><span></span></label>
+                                    </li>
+                                    <li>
+                                      <div class="form-group">
+                                        <div
+                                          class="alert alert-danger"
+                                          role="alert"
+                                          *ngIf="f.submitted && isLoginFailed"
+                                        >
+                                          Connection échoué ! {{ errorMessage }}
+                                        </div>
+                                      </div>
+                                    </li>
+                              </ul>
+                          </form>
+                          <div class="alert alert-success" *ngIf="isLoggedIn">
+                            Connecté en tant que {{ roles }}.
+                          </div>
+                          <span>Pas encore membre ? <a>Souscrivez ici -></a></span>
+                      </div>
+                  </div>

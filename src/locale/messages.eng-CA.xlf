@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="eng-CA" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="5366650174160935530" datatype="html">
+        <source>Championnats</source>
+        <target>Tournaments</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/championnats/championnats.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4371586914583463055" datatype="html">
+        <source>ligues</source>
+        <target>leagues</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/championnats/championnats.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7843848468376708347" datatype="html">
+        <source>pays</source>
+        <target>countries</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/championnats/championnats.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4814374722159879581" datatype="html">
+        <source>equipes</source>
+        <target>teams</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/championnats/championnats.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

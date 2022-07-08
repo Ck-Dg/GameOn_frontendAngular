@@ -1,0 +1,31 @@
+<style>
+  table {
+    border-collapse: separate;
+    border-spacing: 50px 0;
+  }
+
+  td {
+    padding: 10px 0;
+  }
+
+</style>
+<section>
+<h2 i18n>Championnats</h2>
+<table align="center">
+<thead>
+<tr>
+<th i18n>ligues</th>
+<th i18n>pays</th>
+<th i18n>equipes</th>
+<th i18n></th>
+</tr>
+</thead>
+<tbody>
+<tr *ngFor="let game of _games">
+  <td>{{game.league}}</td>
+  <td>{{game.country}}</td>
+  <td>{{game.teams}}</td>
+</tr>
+</tbody>
+</table>
+</section>
