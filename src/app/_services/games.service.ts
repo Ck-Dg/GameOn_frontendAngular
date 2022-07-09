@@ -18,8 +18,8 @@ export class GamesService {
 
   getAllGames(){
 
-    return this.http.get("http://localhost:8082/games");
-    //return this.http.get("http://ckgameonnode-env.eba-zzq6z9mi.eu-west-3.elasticbeanstalk.com/games");
-    
+    //return this.http.get("http://localhost:8082/games");
+    return this.http.get("http://gameonnode-env.eba-865u6xfd.eu-west-3.elasticbeanstalk.com/games");
+
   }
 }
