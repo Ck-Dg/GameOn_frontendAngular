@@ -11,6 +11,7 @@
                               <!--// Username \\-->
                               <ul>
                                   <li><label class="form-label">Votre nom d'utilisateur</label><input type="text" value="Entrez votre nom utilisateur*" onblur="if(this.value == '') { this.value ='Entrez votre nom utilisateur*'; }" onfocus="if(this.value =='Entrez votre nom utilisateur*') { this.value = ''; }"
+                                    class="form-control"
                                     name="username"
                                     [(ngModel)]="form.username"
                                     required
@@ -23,7 +24,7 @@
                                         Le nom d'utilisateur doit être au moins 3 caractères
                                       </div>
                                       <div *ngIf="username.errors['maxlength']">
-                                        Le nom d'utilisateur ne doit pas dépasser 20 caractères
+                                         Le nom d'utilisateur ne doit pas dépasser 20 caractères
                                       </div>
                                     </div>
                                   </li>

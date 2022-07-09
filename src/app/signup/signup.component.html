@@ -1,5 +1,4 @@
     <!--// Sign up item\\-->
-
              <div class="col-md-6">
                 <div class="sportsmagazine-login-form sportsmagazine-register-form">
                     <h4>Creer un compte</h4>
@@ -11,20 +10,22 @@
                       novalidate>
                         <ul>
                             <li><label class="form-label">Votre nom d'utilisateur</label><input type="text" value="Entrez votre nom utilisateur" onblur="if(this.value == '') { this.value ='Entrez nom utilisateur'; }" onfocus="if(this.value =='Entrez nom utilisateur') { this.value = ''; }"
+                              class="form-control"
                               name="username"
                               [(ngModel)]="form.username"
                               required
                               minlength="3"
                               maxlength="20"
                               #username="ngModel"/>
-                              <div class="alert-danger" *ngIf="password.errors && f.submitted">
-                                <div *ngIf="password.errors['required']">Password is required</div>
-                                <div *ngIf="password.errors['minlength']">
-                                  Password must be at least 6 characters
+                              <div class="alert-danger" *ngIf="username.errors && f.submitted">
+                                <div *ngIf="username.errors['required']">Nom d'utilisateur est requis</div>
+                                <div *ngIf="username.errors['minlength']">
+                                  Le nom d'utilisateur doit être au moind de 3 characters
                                 </div>
                               </div>
                             </li>
                             <li><label class="form-label">Votre email</label><input type="text" value="Entrez votre email" onblur="if(this.value == '') { this.value ='Entrez votre email'; }" onfocus="if(this.value =='Entrez votre email') { this.value = ''; }"
+                              class="form-control"
                               name="email"
                               [(ngModel)]="form.email"
                               required
@@ -32,7 +33,7 @@
                               #email="ngModel"
                             />
                             <div class="alert-danger" *ngIf="email.errors && f.submitted">
-                              <div *ngIf="email.errors['required']">Email is required</div>
+                              <div *ngIf="email.errors['required']">Une adresse email est requise</div>
                               <div *ngIf="email.errors['email']">
                                 L'adresse email doit être valide
                               </div>
@@ -53,11 +54,24 @@
                               </div>
                             </div>
                             </li>
-                            <li><label class="form-label">Confirmez votre mot de passe</label><input type="text" value="Confirmez votre mot de passe" onblur="if(this.value == '') { this.value ='Confirmez votre mot de passe'; }" onfocus="if(this.value =='Confirmez votre mot de passe') { this.value = ''; }" type="password"
-                              class="form-control"></li>
+                            <li><label class="form-label">Confirmez svp votre mot de passe</label><input type="text"
+                              type="password"
+                              class="form-control"
+                              required
+                              minlength="6"
+                             />
+                              <div class="alert-danger" *ngIf="password.errors && f.submitted">
+                                <div *ngIf="password.errors['required']">Mot de passe requis</div>
+                                <div *ngIf="password.errors['minlength']">
+                                  Mot de passe doit être composé d'au moins 6 caractères
+                                </div>
+                              </div>
+                            </li>
+                            <div class="form-group">
                             <li>
                                 <label class="submit-border"><input type="submit" value="GAME ON !"><span></span></label>
                             </li>
+                            </div>
                         </ul>
 
                         <div class="alert alert-warning" *ngIf="f.submitted && isSignUpFailed">
