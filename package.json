@@ -21,8 +21,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "heroku-postbuild": "ng build",
-    "test": "ng test",
-
+    "test": "ng test"
   },
   "private": true,
   "dependencies": {
