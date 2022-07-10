@@ -19,7 +19,7 @@ export class GamesService {
   getAllGames(){
 
     //return this.http.get("http://localhost:8082/games");
-    return this.http.get("http://gameonnode-env.eba-865u6xfd.eu-west-3.elasticbeanstalk.com/games");
+    return this.http.get("https://cors-everywhere.herokuapp.com/http://gameonnode-env.eba-865u6xfd.eu-west-3.elasticbeanstalk.com/games");
 
   }
 }
