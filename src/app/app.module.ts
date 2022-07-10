@@ -23,6 +23,7 @@ import { StandingsComponent } from './standings/standings.component';
 import { RouterModule } from '@angular/router';
 import { SeasonplayedgamesComponent } from './seasonplayedgames/seasonplayedgames.component';
 import { authInterceptorProviders } from './_helpers/auth.interceptor';
+import { StandingswnbaComponent } from './standingswnba/standingswnba.component';
 
 
 @NgModule({
@@ -43,6 +44,7 @@ import { authInterceptorProviders } from './_helpers/auth.interceptor';
     WnbaPlayoffsComponent,
     StandingsComponent,
     SeasonplayedgamesComponent,
+    StandingswnbaComponent,
     ],
   imports: [
     BrowserModule,

@@ -21,6 +21,9 @@ export class WnbaComponent implements OnInit {
       let donnees = data[0].response
         console.log("data")
         console.log(data)
+
+
+
         console.log("donnees")
         console.log(donnees)
         this.AllGames = donnees;

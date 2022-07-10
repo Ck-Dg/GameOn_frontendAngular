@@ -21,6 +21,7 @@ import { WnbaPlayoffsComponent } from './wnba-playoffs/wnba-playoffs.component';
 import { WnbaAllstarComponent } from './wnba-allstar/wnba-allstar.component';
 import { StandingsComponent } from './standings/standings.component';
 import { SeasonplayedgamesComponent } from './seasonplayedgames/seasonplayedgames.component';
+import { StandingswnbaComponent } from './standingswnba/standingswnba.component';
 
 const routes: Routes = [
 {path: 'header', component: HeaderComponent},
@@ -38,7 +39,8 @@ const routes: Routes = [
 { path: 'wnba_allstar', component: WnbaAllstarComponent},
 { path: 'acceuil', component: AcceuilComponent},
 { path: 'standings', component: StandingsComponent},
-{ path: 'seasonedplayedgames', component: SeasonplayedgamesComponent}
+{ path: 'seasonedplayedgames', component: SeasonplayedgamesComponent},
+{ path: 'standingswnba', component: StandingsComponent}
 ];
 
 @NgModule({
