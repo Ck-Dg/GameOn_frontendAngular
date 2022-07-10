@@ -76,7 +76,6 @@
               <aside class="col-md-1"></aside>
               <aside class="col-md-3"><a href="index.html" class="sportsmagazine-logo"><img src="assets/images/logo-1.png" alt=""></a></aside>
               <aside class="col-md-8">
-
                 <nav class="navbar navbar-expand navbar-dark bg-dark" *ngIf="showAdminBoard">
                   <div class="navbar-header ">
                     <button type="button" class="navbar-toggle collapsed " data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="true">
@@ -98,37 +97,16 @@
                       </li>
                       <li><a i18n href="#">EQUIPES</a>
                           <ul class="sportsmagazine-dropdown-menu">
-                              <li><a href="player-grid.html">Player Grid</a>
-                                  <ul class="sportsmagazine-dropdown-menu">
-                                      <li><a href="player-grid.html">Player Grid W/O/S</a></li>
-                                      <li><a href="player-grid-wls.html">Player Grid W/L/S</a></li>
-                                      <li><a href="player-grid-wrs.html">Player Grid W/R/S</a></li>
-                                  </ul>
-                              </li>
-                              <li><a href="player-modren.html">Player Modren</a>
-                                  <ul class="sportsmagazine-dropdown-menu">
-                                      <li><a href="player-modren.html">Player Modren W/O/S</a></li>
-                                      <li><a href="player-modren-wls.html">Player Modren W/L/S</a></li>
-                                      <li><a href="player-modren-wrs.html">Player Modren W/R/S</a></li>
-                                  </ul>
-                              </li>
-                              <li><a href="player-list.html">Player List</a></li>
-                              <li><a href="fullstanding.html">Full Standing</a></li>
-                              <li><a href="overview.html">Overview</a></li>
-                              <li><a href="roster.html">Roster</a></li>
-                              <li><a href="player-detail.html">Player Detail</a>
-                                  <ul class="sportsmagazine-dropdown-menu">
-                                      <li><a href="player-detail.html">Player Detail W/L/S</a></li>
-                                      <li><a href="player-detail-wls.html">Player Detail W/R/S</a></li>
-                                  </ul>
-                              </li>
+                            <li><a href="/nba" class="nav-link" routerLink="nba">NBA 2022</a></li>
+                            <li><a href="/wnba_playoffs" class="nav-link" routerLink="wnba_playoffs">WNBA 2022</a></li>
                           </ul>
                       </li>
                       <li><a i18n href="#">CLASSEMENTS</a>
                           <ul class="sportsmagazine-dropdown-menu">
                             <ul class="sportsmagazine-megamenu">
                             <ul class="sportsmagazine-megalist">
-                            <li><a href="/standings" class="nav-link" routerLink="standings">Classements WNBA</a></li>
+                            <li><a href="/standings" class="nav-link" routerLink="standings">Classements NBA</a></li>
+                            <li><a href="/standingswnba" class="nav-link" routerLink="standingswnba">Classements WNBA</a></li>
                           </ul>
                         </ul>
                       </ul>
@@ -137,13 +115,10 @@
                           <ul class="sportsmagazine-dropdown-menu">
                               <li><a href="shop-grid.html">Statistiques</a>
                                   <ul class="sportsmagazine-dropdown-menu">
-                                      <li><a href="shop-grid.html">Equipes</a></li>
-                                      <li><a href="shop-grid-wls.html">Paris</a></li>
+                                    <li><a href="/odds-wnba" class="nav-link" routerLink="odds-wnba">Chances</a></li>
                                       <li><a href="shop-grid-wrs.html">Bookmakers</a></li>
                                   </ul>
                               </li>
-                              <li><a href="shop-list.html">Equipes</a></li>
-                              <li><a href="shop-list-wls.html">Pays</a></li>
 
                           </ul>
                       </li>

@@ -74,6 +74,12 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
     line-height: 1.5;
     margin: 0 0 8px;
 }
+
+.scores{
+  font-style: bold;
+  font-size: 20px;
+}
+
 h1 {
     font-size: 26px;
 }

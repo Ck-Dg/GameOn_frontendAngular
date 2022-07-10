@@ -29,6 +29,7 @@
     "@angular/router": "~13.3.8",
     "@fortawesome/fontawesome-free": "^6.1.1",
     "bootstrap": "^3.4.1",
+    "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "glob": "^8.0.3",
     "path": "^0.12.7",

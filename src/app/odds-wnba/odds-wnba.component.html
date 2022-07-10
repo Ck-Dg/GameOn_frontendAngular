@@ -4,12 +4,12 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1>Liste des matchs</h1>
+                <h1>Chances des equipes</h1>
             </div>
             <div class="col-md-12">
                 <ul class="sportsmagazine-breadcrumb">
                     <li><a href="index.html">Acceuil</a></li>
-                    <li>Matchs</li>
+                    <li>Chances</li>
                 </ul>
             </div>
         </div>
@@ -17,28 +17,28 @@
 </div>
 <!--// SubHeader \\-->
 
-<!--// WNBA Games \\-->
+<!--// WNBA Odds \\-->
 <div class="container">
-
 <table>
   <tr>
-      <th>Championnat</th>
-      <th>Equipes</th>
+      <th>Matchs</th>
 
   </tr>
-  <tr *ngFor="let AllGame of AllGames">
-    <img src="{{AllGame.league.logo}}"/>
+  <tr *ngFor="let AllGame of AllOdds">
+    <td>{{AllGame.game.teams.home.name}}</td>
+    <img src="{{AllGame.game.teams.home.logo}}"/>
+
+    <td>{{AllGame.game.teams.away.name}}</td>
+    <img src="{{AllGame.game.teams.away.logo}}"/>
+
+  <td>{{AllGame.game.scores.away.total}}</td>
+  <td>{{AllGame.game.scores.home.total}}</td>
 
 
-  <td>{{AllGame.teams.home.name}}</td>
-  <img src="{{AllGame.teams.home.logo}}"/>
 
-  <td>{{AllGame.teams.away.name}}</td>
-  <img src="{{AllGame.teams.away.logo}}"/>
-  <td class=scores>{{AllGame.scores.away.total}}</td>
-  <td class=scores>{{AllGame.scores.home.total}}</td>
+
+
 </tr>
 
   </table>
 </div>
-<!--// WNBA Games \\-->
