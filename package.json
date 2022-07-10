@@ -9,7 +9,8 @@
     "scripts": true,
     "styles": {
       "minify": true,
-      "inlineCritical": false
+      "inlineCritical": false,
+      "inline": false
     },
     "fonts": true
   },
