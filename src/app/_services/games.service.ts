@@ -22,4 +22,9 @@ export class GamesService {
     return this.http.get("https://cors-everywhere.herokuapp.com/http://gameonnode-env.eba-865u6xfd.eu-west-3.elasticbeanstalk.com/games");
 
   }
+
+  getAllOdds(){
+
+    return this.http.get("https://cors-everywhere.herokuapp.com/http://gameonnode-env.eba-865u6xfd.eu-west-3.elasticbeanstalk.com/odds");
+  }
 }
