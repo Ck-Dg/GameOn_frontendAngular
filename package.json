@@ -5,15 +5,6 @@
     "node": "16.13.2",
     "npm": "8.13.2"
   },
-  "optimization": {
-    "scripts": true,
-    "styles": {
-      "minify": true,
-      "inlineCritical": false,
-      "inline": false
-    },
-    "fonts": true
-  },
   "scripts": {
     "ng": "ng",
     "start": "node server.js",
