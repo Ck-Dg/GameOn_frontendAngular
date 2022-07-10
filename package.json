@@ -5,6 +5,14 @@
     "node": "16.13.2",
     "npm": "8.13.2"
   },
+  "optimization": {
+    "scripts": true,
+    "styles": {
+      "minify": true,
+      "inlineCritical": false
+    },
+    "fonts": true
+  },
   "scripts": {
     "ng": "ng",
     "start": "node server.js",
@@ -13,7 +21,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "heroku-postbuild": "ng build",
-    "test": "ng test"
+    "test": "ng test",
+
   },
   "private": true,
   "dependencies": {
