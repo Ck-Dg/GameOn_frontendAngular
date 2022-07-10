@@ -1,16 +1,44 @@
-<h1>Liste des games</h1>
-<table>
-<tr>
-    <th>league</th>
-    <th>country</th>
-    <th>teams</th>
-    
-</tr>
-<tr *ngFor="let AllGame of AllGames">
-<td>{{AllGame.league.name}}</td>
-<td>{{AllGame.country.name}}</td>
-<td>{{AllGame.teams.home.name}}</td>
-<td>{{AllGame.teams.away.name}}</td>
+	<!--// SubHeader \\-->
+  <div class="sportsmagazine-subheader">
+    <span class="subheader-transparent"></span>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Liste des matchs</h1>
+            </div>
+            <div class="col-md-12">
+                <ul class="sportsmagazine-breadcrumb">
+                    <li><a href="index.html">Acceuil</a></li>
+                    <li>Matchs</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--// SubHeader \\-->
 
+<!--// WNBA Games \\-->
+<div class="container">
+
+<table>
+  <tr>
+      <th>Championnat</th>
+      <th>Equipes</th>
+
+  </tr>
+  <tr *ngFor="let AllGame of AllGames">
+    <img src="{{AllGame.league.logo}}"/>
+
+
+  <td>{{AllGame.teams.home.name}}</td>
+  <img src="{{AllGame.teams.home.logo}}"/>
+
+  <td>{{AllGame.teams.away.name}}</td>
+  <img src="{{AllGame.teams.away.logo}}"/>
+  <td>{{AllGame.scores.away.total}}</td>
+  <td>{{AllGame.scores.home.total}}</td>
 </tr>
-</table>
+
+  </table>
+</div>
+<!--// WNBA Games \\-->

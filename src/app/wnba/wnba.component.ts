@@ -11,11 +11,11 @@ export class WnbaComponent implements OnInit {
 
   games : string []=[];
   AllGames : any;
-  
+
     constructor(private service : GamesService) { }
-  
+
     ngOnInit(): void {
-  
+
       this.service.getAllGames().subscribe(
         (data:any) => {
       let donnees = data[0].response
@@ -28,5 +28,5 @@ export class WnbaComponent implements OnInit {
               }
         );
       }
-  
+
     }
