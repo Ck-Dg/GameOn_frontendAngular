@@ -4,13 +4,12 @@
     <th>league</th>
     <th>country</th>
     <th>teams</th>
-    
+
 </tr>
 <tr *ngFor="let AllGame of AllGames">
 <td>{{AllGame.league.name}}</td>
 <td>{{AllGame.country.name}}</td>
 <td>{{AllGame.teams.home.name}}</td>
 <td>{{AllGame.teams.away.name}}</td>
-
 </tr>
 </table>

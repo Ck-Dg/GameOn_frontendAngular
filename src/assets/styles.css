@@ -2002,7 +2002,7 @@ ul li:last-child .sportsmagazine-blog-list-wrap {
     width: 100%;
     height: 100%;
     opacity: 0.8;
-    background-color: #000;
+    background-color: rgb(147, 113, 113);
 }
 .sportsmagazine-subheader h1 {
     font-size: 45px;
